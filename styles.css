@@ -1,0 +1,353 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Open Sans', sans-serif;
+    --color-blue: #0284c7;
+    --color-dark-blue: #0c4a6e;
+    --color-light-blue: #0ea5e9;
+    --color-white: #fafafa;
+    ---offset: 10px; 
+}
+
+.menu {
+    background-color: var(--color-blue);
+}
+
+.section {
+    max-width: 1024px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.menu-section {
+    height: 60px;
+    align-items: center;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--color-white);
+}
+
+a {
+    color: var(--color-white);
+    text-decoration: none;
+    padding: 0 15px;
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#adress-link-padding {
+    padding-right: 0px;
+}
+
+.text-properties {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.header {
+    background-image: url(file/hero.png);
+}
+
+.background-image {
+    background-size: cover;
+    background-position: center;
+}
+
+.header-detail {
+    width: calc(100% / 12 * 6);
+}
+
+.general-title {
+    font-size: 50px;
+    font-weight: 700;
+    padding-top: 100px;
+}
+
+.title-color {
+    color: var(--color-blue);
+}
+
+.header-text {
+    color: var(--color-dark-blue);
+    font-size: 16px;
+    line-height: 20px;
+    padding-top: 30px;
+}
+
+.button {
+    background-color: var(--color-light-blue);
+    width: calc(100% / 12 * 3);
+    color: var(--color-white);
+    font-size: 18px;
+    font-weight: 600;
+    border: 1px solid var(--color-light-blue);
+    border-radius: 10px;
+    box-shadow: 0 2px 5px 0 #404040;
+    cursor: pointer;
+    padding: 15px;
+    margin: 50px 0;
+}
+
+.button:hover {
+    background-color: var(--color-dark-blue);
+    border: 1px solid var(--color-dark-blue);
+    transition: 0.5s;
+}
+
+.title {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    color: #0369a1;
+    padding-top: 70px;
+}
+
+.padding-bottom {
+    padding-bottom: 70px;
+}
+
+.services {
+    background-color: var(--color-blue);
+    height: 285px;
+    box-shadow: 0 5px 5px 0 #a3a3a3;
+}
+
+.services-container {
+    height: 100%;
+    align-items: center;
+    margin: 0 -15px;
+}
+
+.image-container {
+    width: calc(100% / 12 * 3);
+    border-radius: 20px;
+    overflow: hidden;
+    height: 60%;
+    box-shadow: 0 2px 5px 0 #075985;
+}
+
+.service-image1 {
+    background-image: linear-gradient(to right, #4597c79d, #fafafa00), url(file/service-3.png);
+}
+
+.service-image2 {
+    background-image: linear-gradient(to right, #4597c79d, #fafafa00), url(file/service-2.png);
+}
+
+.service-image3 {
+    background-image: linear-gradient(to right, #4597c79d, #fafafa00), url(file/service-1.png);
+}
+
+.service-number {
+    font-size: 20px;
+    color: var(--color-white);
+    font-weight: 300;
+}
+
+.service-name {
+    font-size: 17px;
+    color: var(--color-white);
+    font-weight: 500;
+}
+
+.service-text {
+    flex-direction: column;
+    height: 100%;
+    padding-left: var(---offset);
+    padding-top: var(---offset);
+}
+
+.service-name-container {
+    align-items: flex-start;
+}
+
+.pointer-right {
+    width: 60px;
+    height: 60px;
+}
+
+.service-icon {
+    height: 90px;
+    width: 55px;
+}
+
+.information {
+    background-image: url(file/background-1.png);
+}
+
+.scroll-margin {
+    scroll-margin-top: 100px;
+}
+
+.information-text {
+    font-size: 20px;
+    font-weight: 200;
+    padding-bottom: 30px;
+    text-align: justify;
+}
+
+.button-container {
+    display: flex;
+    justify-content: end;
+}
+
+.review-container {
+    flex-wrap: wrap;
+}
+
+.review {
+    align-items: center;
+    border: 1px solid #e5e5e5;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px 0 #d4d4d4;
+    width: calc(100% / 12 * 6 - 10px);
+    margin-bottom: 40px;
+}
+
+.review-image {
+    padding: 30px var(---offset);
+}
+
+.review-detail {
+    display: flex;
+    flex-direction: column;
+    height: 85%;
+}
+
+.review-name {
+    color: var(--color-blue);
+    font-size: 18px;
+    font-weight: 800;
+    padding-bottom: 15px;
+}
+
+.review-text {
+    font-size: 14px;
+    font-weight: 200;
+    color: #525252;
+    line-height: 18px;
+}
+
+.adress {
+    background-image: linear-gradient(#f0f9ffb9, #f0f9ffb9), url(file/map-background.png);
+}
+
+.adress-group {
+    align-items: center;
+    gap: 20px;
+}
+
+.location {
+    background-color: var(--color-white);
+    width: calc(100% / 12 * 4);
+    border: 1px solid var(--color-blue);
+    border-radius: 20px;
+    padding: 15px;
+}
+
+.location-detail {
+    align-items: flex-start;
+    padding-bottom: 30px;
+}
+
+.location-pointer-icon {
+    width: 20px;
+    height: 25px;
+}
+
+.location-info-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.location-text {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px;
+    color: var(--color-dark-blue);
+    padding-left: 10px;
+}
+
+.location-detail-color {
+    font-weight: 600;
+}
+
+.location-number {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--color-dark-blue);
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.footer {
+    background-color: #f0f9ff;
+}
+
+.footer-container {
+    flex-direction: column;
+    gap: 40px;
+    padding-top: 50px;
+}
+
+.footer-detail {
+    align-items: flex-start;
+}
+
+.footer-text {
+    color: var(--color-dark-blue);
+    line-height: 20px;
+}
+
+.footer-text-color {
+    font-weight: 700;
+}
+
+.footer-link {
+    display: flex;
+    align-items: center;
+}
+
+.footer-detail-container {
+    display: flex;
+    align-items: flex-start;
+}
+
+.footer-icon {
+    padding-right: 5px;
+}
+
+.footer-detail-license {
+    text-align: end;
+}
+
+#return-button {
+    background-color: var(--color-blue);
+    color: var(--color-white);
+    border: 1px solid var(--color-white);
+    border-radius: 50%;
+    padding: var(---offset);
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+}

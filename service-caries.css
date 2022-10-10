@@ -1,0 +1,97 @@
+#service-caries-title {
+    text-align: left;
+}
+
+.padding {
+    padding-top: 100px;
+    padding-bottom: 60px;
+}
+
+.information-container {
+    align-items: center;
+    gap: 30px;
+}
+
+.information-container-text {
+    width: calc(100% / 12 * 7);
+    font-size: 22px;
+    line-height: 27px;
+    text-align: justify;
+    color: var(--color-dark-blue);
+}
+
+.information-text-padding {
+    padding-bottom: 50px;
+}
+
+.information-container-image {
+    width: calc(100% / 12 * 5);
+    border-radius: 30px;
+    overflow: hidden;
+    height: 600px;
+}
+
+.image {
+    object-fit: contain;
+    object-position: center;
+}
+
+.price-title {
+    text-align: center;
+}
+
+.price-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.price-detail {
+    width: calc(100% / 12 * 11);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.background-light {
+    background-color: #f0f9ff;
+}
+
+.background-dark {
+    background-color: #e0f2fe;
+}
+
+.price-info {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--color-dark-blue);
+}
+
+.price-info-blue {
+    color: var(--color-light-blue);
+}
+
+.price-info-green {
+    color: rgba(38, 153, 42, 1);  
+}
+
+.blank-container {
+    height: 170px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
