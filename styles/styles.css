@@ -20,6 +20,7 @@ html {
     width: 100%;
     height: 100%;
     margin: 0 auto;
+    padding: 0 var(---offset);
 }
 
 .menu-section {
@@ -32,10 +33,18 @@ html {
     justify-content: space-between;
 }
 
-.logo {
+.logo-container {
+    display: flex;
+}
+
+#logo {
     font-size: 20px;
     font-weight: 700;
-    color: var(--color-white);
+    padding: 0;
+}
+
+#logo:hover {
+    text-decoration: none;
 }
 
 a {
@@ -53,13 +62,21 @@ a:hover {
     padding-right: 0px;
 }
 
+.mobile-menu-container {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
 .text-properties {
     font-size: 16px;
     font-weight: 500;
 }
 
 .header {
-    background-image: url(file/hero.png);
+    background-image: url(../file/hero.png);
 }
 
 .background-image {
@@ -129,7 +146,6 @@ a:hover {
 .services-container {
     height: 100%;
     align-items: center;
-    margin: 0 -15px;
 }
 
 .image-container {
@@ -141,15 +157,15 @@ a:hover {
 }
 
 .service-image1 {
-    background-image: linear-gradient(to right, #4597c79d, #fafafa00), url(file/service-3.png);
+    background-image: linear-gradient(to right, #4597c79d, #fafafa00), url(../file/service-3.png);
 }
 
 .service-image2 {
-    background-image: linear-gradient(to right, #4597c79d, #fafafa00), url(file/service-2.png);
+    background-image: linear-gradient(to right, #4597c79d, #fafafa00), url(../file/service-2.png);
 }
 
 .service-image3 {
-    background-image: linear-gradient(to right, #4597c79d, #fafafa00), url(file/service-1.png);
+    background-image: linear-gradient(to right, #4597c79d, #fafafa00), url(../file/service-1.png);
 }
 
 .service-number {
@@ -158,10 +174,16 @@ a:hover {
     font-weight: 300;
 }
 
+.service-name-container {
+    display: flex;
+    flex-direction: column;
+}
+
 .service-name {
     font-size: 17px;
     color: var(--color-white);
     font-weight: 500;
+    width: 60%;
 }
 
 .service-text {
@@ -171,27 +193,32 @@ a:hover {
     padding-top: var(---offset);
 }
 
-.service-name-container {
-    align-items: flex-start;
+.pointer-container {
+    align-self: flex-end;
 }
 
 .pointer-right {
+    margin-top: -20px;
     width: 60px;
     height: 60px;
 }
 
+#pointer-right-02 {
+    margin-top: -30px;
+}
+
 .service-icon {
-    height: 90px;
+    height: 95px;
     width: 55px;
 }
 
 .information {
-    background-image: url(file/background-1.png);
+    background-image: url(../file/background-1.png);
 }
 
 .scroll-margin {
     scroll-margin-top: 100px;
-}
+} 
 
 .information-text {
     font-size: 20px;
@@ -216,6 +243,7 @@ a:hover {
     box-shadow: 0 2px 5px 0 #d4d4d4;
     width: calc(100% / 12 * 6 - 10px);
     margin-bottom: 40px;
+    height: 190px;
 }
 
 .review-image {
@@ -225,14 +253,14 @@ a:hover {
 .review-detail {
     display: flex;
     flex-direction: column;
-    height: 85%;
+    height: 90%;
 }
 
 .review-name {
     color: var(--color-blue);
     font-size: 18px;
     font-weight: 800;
-    padding-bottom: 15px;
+    padding-bottom: 12px;
 }
 
 .review-text {
@@ -243,7 +271,7 @@ a:hover {
 }
 
 .adress {
-    background-image: linear-gradient(#f0f9ffb9, #f0f9ffb9), url(file/map-background.png);
+    background-image: linear-gradient(#f0f9ffcc, #f0f9ffcc), url(../file/map-background.png);
 }
 
 .adress-group {
@@ -351,3 +379,233 @@ a:hover {
     bottom: 40px;
     right: 40px;
 }
+
+
+
+@media (max-width: 768px) {
+
+    /* Сейчас будет мобильное меню  */
+
+    .navigation {
+        display: none;
+    }
+
+    .logo-container {
+        display: none;
+    }
+    
+    .mobile-menu-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    
+    #navigation-button {
+        background-color: var(--color-blue);
+        border: none;
+        cursor: pointer;
+    }
+
+    .menu-icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .mobile-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: var(--color-blue);
+        padding-bottom: var(---offset);
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+    }
+
+    .mobile-menu-link {
+        border-bottom: 1px solid var(--color-white);
+        padding: var(---offset);
+
+    }
+
+
+        
+    /*а теперь адаптивная верстка самой страницы*/
+
+    .general-title {
+        font-size: 36px;
+    }
+
+    .button {
+        font-size: 14px;
+        padding: var(---offset);
+    }
+
+    .title {
+        font-size: 32px;
+    }
+
+    .service-icon {
+        display: none;
+    }
+
+    .services-container {
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        gap: 20px;
+    }
+
+    .image-container {
+        flex: 0 0 auto;
+        width: 250px;
+    }
+
+    .information-text {
+        font-size: 18px;
+    }
+
+    .review-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .review {
+        width: calc(100%  / 12 * 10);
+    }
+
+    .review-detail {
+        height: 85%;
+    }
+
+    .review-text {
+        text-align: justify;
+        padding-right: var(---offset);
+    }
+
+    .adress-group {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .location {
+        width: calc(100% / 12 * 5);
+    }
+
+    .footer-detail {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .footer-link {
+        align-self: flex-end;
+    }
+    
+    #return-button {
+        bottom: 20px;
+        right: 20px;
+    }
+
+    .scroll-margin {
+        scroll-margin-top: 0;
+    } 
+
+}
+
+@media (max-width: 500px) {
+
+    .general-title {
+        font-size: 30px;
+    }
+
+    .header-text {
+        font-size: 14px;
+    }
+
+    .button {
+        width: calc(100% / 12 * 6);
+
+    }
+
+    .title {
+        font-size: 28px;
+    }
+
+    .service-name {
+        font-size: 15px;
+    }
+
+    .pointer-right {
+        width: 50px;
+        height: 50px;
+    }
+
+    .review {
+        width: calc(100%  / 12 * 12);
+    }
+
+    .review-image {
+        padding: 35px var(---offset);
+    }
+
+    .review-name {
+        font-size: 15px;
+        padding-bottom: var(---offset);
+    }
+
+    .review-detail {
+        height: 90%;
+    }
+
+    .adress-group {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .location {
+        width: calc(100% / 12 * 10);
+    }
+
+    .location-detail {
+        padding-bottom: 20px;
+    }
+
+    .location-text {
+        font-size: 16px;
+    }
+
+    .location-number {
+        font-size: 16px;
+    }
+
+    .footer-detail {
+        gap: 20px;
+    }
+
+}
+
+@media (max-width: 385px) {
+
+    .general-title {
+        font-size: 28px;
+    }
+
+    .button {
+        width: calc(100% / 12 * 6);
+    }
+
+    .review {
+        height: 270px;
+    }
+
+    .review-text {
+        font-size: 13px;
+    }
+    
+}
+
+
+
+
+

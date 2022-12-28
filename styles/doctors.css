@@ -37,7 +37,7 @@ form {
     width: 35px; 
     position: absolute;
     top: 8px;
-    left: 10px;
+    left: var(---offset);
     cursor: pointer;
     outline: none;
     border: none;
@@ -58,23 +58,22 @@ form {
     color: #525252;
 }
 
-.doctor {
-    padding-bottom: 30px;
-}
-
 .doctors-container {
-    gap: 20px;
+    flex-wrap: wrap;
+    gap: var(---offset);
 }
 
 .doctors {
-    width: calc(100%  / 12 * 4 );
+    width: calc(100%  / 12 * 4 - var(---offset));
     flex-direction: column;
     gap: 12px;
     text-align: center;
+    padding-bottom: 70px;
+    
 }
 
 .doctors-image {
-    object-fit: auto;
+    object-fit: cover;
     object-position: center;
     border-radius: 15px;
     box-shadow: 0 2px 5px 0 #a3a3a3;
@@ -98,9 +97,9 @@ form {
     font-size: 16px;
     font-weight: 600;
     border: 2px solid var(--color-blue);
-    border-radius: 10px;
+    border-radius: var(---offset);
     cursor: pointer;
-    padding: 10px;
+    padding: var(---offset);
     width: 70%;
     margin: 0 auto;
 }
@@ -112,6 +111,59 @@ form {
     transition: 0.5s;
 } 
 
+
+@media (max-width: 768px) {
+
+    .text-doctors {
+        font-size: 19px;
+    }
+
+    .doctors {
+        width: calc(100% / 12 * 6 - var(---offset));
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .text-doctors {
+        font-size: 18px;
+    }
+
+    .doctors-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .doctors {
+        width: calc(100% / 12 * 11 - var(---offset));
+    }
+
+    form {
+        width: calc(100% / 12 * 11);
+    }
+
+}
+
+@media (max-width: 385px) {
+
+    .text-doctors {
+        font-size: 16px;
+    }
+
+    .text-doctors {
+        font-size: 18px;
+    }
+
+    .doctors {
+        width: calc(100% / 12 * 12 - var(---offset));
+    }
+
+    form {
+        width: calc(100% / 12 * 12);
+    }
+
+}
 
 
 

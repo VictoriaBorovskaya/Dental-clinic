@@ -3,10 +3,10 @@
     <head>
         <meta charset="utf-8" />
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <title>Стоматология Dental Plus</title>
-        <link rel="stylesheet" type="text/css" href="reset.css" />
-        <link rel="stylesheet" type="text/css" href="styles.css" />
-        <link rel="stylesheet" type="text/css" href="doctors.css" />
+        <title>Специалисты Dento Plus</title>
+        <link rel="stylesheet" type="text/css" href="styles/reset.css" />
+        <link rel="stylesheet" type="text/css" href="styles/styles.css" />
+        <link rel="stylesheet" type="text/css" href="styles/doctors.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300&display=swap" rel="stylesheet">
@@ -18,16 +18,31 @@
         <div class="menu">
             <div class="section">
                 <div class="menu-section flex-container">
-                    <div>
-                        <p class="logo">Dento Plus</p>
+                    
+                    <div class="logo-container">
+                        <a href="/index.html" id="logo">Dento Plus</a>
                     </div>
-                    <div>
+                    <div class="navigation">
                         <a href="/service-caries.html" class="text-properties">Услуги</a>
-                        <a href="/index.html#information-link" class="text-properties">О нас</a>
+                        <a href="#information-link" class="text-properties">О нас</a>
                         <a href="/doctors.html" class="text-properties">Врачи</a>
-                        <a href="/index.html#reviews-link" class="text-properties">Отзывы</a>
-                        <a href="/index.html#adress-link" class="text-properties" id="adress-link-padding">Отделения</a>
+                        <a href="#reviews-link" class="text-properties">Отзывы</a>
+                        <a href="#adress-link" class="text-properties" id="adress-link-padding">Отделения</a>
                     </div>
+                    
+                    <div class="mobile-menu-container">
+                        <a href="/index.html" id="logo">Dento Plus</a>
+                        <button id="navigation-button" onclick="openMenu()"><img src="file/menu-icon.png" class="menu-icon"/></button>
+                    </div>
+                    <div class="mobile-menu" id="mobile-menu">
+                        <a href="/service-caries.html" class="text-properties mobile-menu-link">Услуги</a>
+                        <a href="#information-link" class="text-properties mobile-menu-link">О нас</a>
+                        <a href="/doctors.html" class="text-properties mobile-menu-link">Врачи</a>
+                        <a href="#reviews-link" class="text-properties mobile-menu-link">Отзывы</a>
+                        <a href="#adress-link" class="text-properties mobile-menu-link" id="adress-link-padding">Отделения</a>
+                    </div>
+
+
                 </div>    
             </div>
         </div>
@@ -76,11 +91,7 @@
                     <p class="doctors-qualification text-color">Стоматолог-терапевт</p>
                     <button class="button-white">ПОДРОБНЕЕ</button>
                 </div>
-            </div>
-        </div>
 
-        <div class="doctor">
-            <div class="section padding-bottom flex-container doctors-container">
                 <div class="doctors flex-container">
                     <img src="file/doctor-4.png" class="doctors-image"/>
                     <p class="doctors-name text-color">Неверов Сергей Сергеевич</p>
@@ -101,8 +112,10 @@
                     <p class="doctors-qualification text-color">Стоматолог-ортопед</p>
                     <button class="button-white">ПОДРОБНЕЕ</button>
                 </div>
+
             </div>
         </div>
+
 
         <div class="footer">
             <div class="section">
@@ -158,6 +171,8 @@
                 </div>
             </div>
         </div>
+
+        <script src="script.js"></script>
 
     </body>
 </html>

@@ -80,11 +80,76 @@
 
 
 
+@media (max-width: 768px) {
+
+    #service-caries-title {
+        text-align: center;
+    }
+
+    .information-container {
+        flex-direction: column;
+    }
+
+    .information-container-text {
+        width: calc(100% / 12 * 12);
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .information-text-padding {
+        padding-bottom: 30px;
+    }
+
+    .information-container-image {
+        width: calc(100% / 12 * 7);
+        height: 500px;
+    }
+
+    .price-info {
+        font-size: 16px;
+        text-align: justify;
+        line-height: 20px;
+    }
+
+}
 
 
+@media (max-width: 668px) {
+    .information-container-image {
+        width: calc(100% / 12 * 8);
+    }
+}
 
+@media (max-width: 650px) {
+    .information-container-image {
+        width: calc(100% / 12 * 9);
+    }
+}
 
+@media (max-width: 590px) {
+    .information-container-image {
+        width: calc(100% / 12 * 10);
+    }
+}
 
+@media (max-width: 500px) {
+    .information-container-image {
+        width: calc(100% / 12 * 12);
+    }
+
+    .information-container-text {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 375px) {
+
+    .image {
+        object-fit: auto;
+        object-position: center;
+    }
+
+}
 
 
 
